@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+}
+
+.container {
+  background-color: antiquewhite;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+h1,
+p {
+  text-align: center;
+}
