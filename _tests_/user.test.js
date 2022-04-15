@@ -25,4 +25,8 @@ describe("User", () => {
   test("should return the user's age in Jupiter years", () => {
     expect(user.jupiterAge()).toEqual(2);
   });
+
+  test("should calculate the life expectancy of the user", () => {
+    expect(user.lifeExpectancy()).toEqual(50);
+  });
 });
