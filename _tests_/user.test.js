@@ -12,23 +12,19 @@ describe("User", () => {
 
   // planet ages
   test("should return the user's age in Earth years", () => {
-    expect(user.earthAge(user.dayAge)).toEqual(25);
+    expect(user.planetAge("earth", user.dayAge)).toEqual(25);
   });
-  test("should return the user's age in Mercury years", () => {
-    expect(user.mercuryAge(user.dayAge)).toEqual(103);
-  });
-  test("should return the user's age in Venus years", () => {
-    expect(user.venusAge(user.dayAge)).toEqual(40);
-  });
-  test("should return the user's age in Mars years", () => {
-    expect(user.marsAge(user.dayAge)).toEqual(13);
-  });
-  test("should return the user's age in Jupiter years", () => {
-    expect(user.jupiterAge(user.dayAge)).toEqual(2);
-  });
-
   test("should return the user's age in Mercury years", () => {
     expect(user.planetAge("mercury", user.dayAge)).toEqual(103);
+  });
+  test("should return the user's age in Venus years", () => {
+    expect(user.planetAge("venus", user.dayAge)).toEqual(40);
+  });
+  test("should return the user's age in Mars years", () => {
+    expect(user.planetAge("mars", user.dayAge)).toEqual(13);
+  });
+  test("should return the user's age in Jupiter years", () => {
+    expect(user.planetAge("jupiter", user.dayAge)).toEqual(2);
   });
 
   // lifeExpectancy
