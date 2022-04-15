@@ -9,4 +9,6 @@ export class User {
     let mercuryAge = Math.floor(this.dayAge / 88);
     return mercuryAge;
   }
+
+  venusAge() {}
 }
