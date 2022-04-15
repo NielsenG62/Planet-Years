@@ -9,4 +9,9 @@ describe("User", () => {
     expect(user.name).toEqual("Gabe");
     expect(user.age).toEqual(25);
   });
+
+  // Mercury Years
+  test("should return the user's age in Mercury years", () => {
+    expect(user.mercuryAge()).toEqual(103);
+  });
 });
