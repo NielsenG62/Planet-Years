@@ -7,6 +7,11 @@ export class User {
 
   earthAge(days) {
     let earthAge = Math.floor(days / 365);
+    if (earthAge < 0) {
+      let expectancy =
+        "You are " + Math.abs(earthAge) + " years over the average";
+      return expectancy;
+    }
     return earthAge;
   }
 
