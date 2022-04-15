@@ -25,6 +25,13 @@ export class User {
     let daysExpected = 27375;
     let daysLeft = Math.floor(daysExpected - this.dayAge);
     let planetDaysLeft = this.planetAge(planet, daysLeft);
+    if (planetDaysLeft < 0) {
+      let expectancy =
+        "You are " +
+        Math.abs(planetDaysLeft) +
+        " years over the average life expectancy on this planet.";
+      return expectancy;
+    }
     return planetDaysLeft;
   }
 }
