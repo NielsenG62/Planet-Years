@@ -35,4 +35,6 @@ export class User {
     let daysLeft = Math.floor(daysExpected - this.dayAge);
     return daysLeft;
   }
+
+  lifeExpectancyCalc() {}
 }
