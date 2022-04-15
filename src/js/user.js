@@ -1,6 +1,5 @@
 export class User {
-  constructor(name, age) {
-    this.name = name;
+  constructor(age) {
     this.age = age;
     this.dayAge = age * 365;
   }
