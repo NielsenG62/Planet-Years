@@ -31,8 +31,8 @@ export class User {
   }
 
   lifeExpectancy() {
-    let yearsExpected = 75;
-    let yearsLeft = Math.floor(yearsExpected - this.age);
-    return yearsLeft;
+    let daysExpected = 27375;
+    let daysLeft = Math.floor(daysExpected - this.dayAge);
+    return daysLeft;
   }
 }

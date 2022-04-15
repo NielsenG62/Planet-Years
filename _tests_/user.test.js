@@ -31,6 +31,6 @@ describe("User", () => {
   });
 
   test("should calculate the life expectancy of the user", () => {
-    expect(user.lifeExpectancy()).toEqual(50);
+    expect(user.earthAge(lifeExpectancy())).toEqual(50);
   });
 });
