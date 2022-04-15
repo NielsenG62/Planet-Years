@@ -5,23 +5,23 @@ export class User {
     this.dayAge = age * 365;
   }
 
-  mercuryAge() {
-    let mercuryAge = Math.floor(this.dayAge / 88);
+  mercuryAge(days) {
+    let mercuryAge = Math.floor(days / 88);
     return mercuryAge;
   }
 
-  venusAge() {
-    let venusAge = Math.floor(this.dayAge / 225);
+  venusAge(days) {
+    let venusAge = Math.floor(days / 225);
     return venusAge;
   }
 
-  marsAge() {
-    let marsAge = Math.floor(this.dayAge / 687);
+  marsAge(days) {
+    let marsAge = Math.floor(days / 687);
     return marsAge;
   }
 
-  jupiterAge() {
-    let jupiterAge = Math.floor(this.dayAge / 4307);
+  jupiterAge(days) {
+    let jupiterAge = Math.floor(days / 4307);
     return jupiterAge;
   }
 

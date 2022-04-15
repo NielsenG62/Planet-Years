@@ -11,19 +11,19 @@ describe("User", () => {
   });
 
   test("should return the user's age in Mercury years", () => {
-    expect(user.mercuryAge()).toEqual(103);
+    expect(user.mercuryAge(user.dayAge)).toEqual(103);
   });
 
   test("should return the user's age in Venus years", () => {
-    expect(user.venusAge()).toEqual(40);
+    expect(user.venusAge(user.dayAge)).toEqual(40);
   });
 
   test("should return the user's age in Mars years", () => {
-    expect(user.marsAge()).toEqual(13);
+    expect(user.marsAge(user.dayAge)).toEqual(13);
   });
 
   test("should return the user's age in Jupiter years", () => {
-    expect(user.jupiterAge()).toEqual(2);
+    expect(user.jupiterAge(user.dayAge)).toEqual(2);
   });
 
   test("should calculate the life expectancy of the user", () => {
