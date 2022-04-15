@@ -1,9 +1,11 @@
 body {
-  background-color: black;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
-  background-color: antiquewhite;
+  background-color: rgba(250, 235, 215, 0.74);
   margin-top: 1em;
   padding: 1em;
 }
