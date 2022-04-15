@@ -30,7 +30,10 @@ describe("User", () => {
     expect(user.jupiterAge(user.dayAge)).toEqual(2);
   });
 
-  test("should calculate the life expectancy of the user", () => {
+  test("should calculate the life expectancy of the user in earth years", () => {
     expect(user.earthAge(user.lifeExpectancy())).toEqual(50);
+  });
+  test("should calculate the life expectancy of the user in Jupiter years", () => {
+    expect(user.jupiterAge(user.lifeExpectancy())).toEqual(4);
   });
 });
