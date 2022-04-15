@@ -20,7 +20,11 @@ export class User {
     return planetAge;
   }
 
-  accuratePlanetAge() {}
+  accuratePlanetAge(date1, date2) {
+    let accurateDayAge =
+      (date2.getTime() - date1.getTime()) / (1000 * 3600 * 24);
+    return accurateDayAge;
+  }
 
   lifeExpectancy(planet) {
     let daysExpected = 27375;
