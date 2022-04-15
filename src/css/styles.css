@@ -16,6 +16,11 @@ p {
 h2 {
   font-size: 1.5em;
   text-align: center;
+  line-height: normal;
+}
+
+#aside {
+  font-size: initial;
 }
 
 form {

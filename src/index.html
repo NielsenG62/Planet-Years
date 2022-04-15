@@ -13,18 +13,20 @@
       <form>
         <input required type="number" name="age" id="age" placeholder="Age" />
         <select required class="form-select" name="planet" id="planet-select">
-          <option value="none" selected disabled>---Choose a planet---</option>
+          <option disabled>---Choose a planet---</option>
+          <option value="earth">Earth</option>
           <option value="mercury">Mercury</option>
           <option value="venus">Venus</option>
-          <option value="earth">Earth</option>
           <option value="mars">Mars</option>
           <option value="jupiter">Jupiter</option>
         </select>
         <button type="submit" class="btn btn-primary">How old am I?</button>
       </form>
-      <h2>Your planet age: <span id="planet-age"></span> Years old</h2>
+      <h2>Your planet age: <span id="planet-age"></span></h2>
       <h2>
-        How many years do you have left on this planet?
+        How many years do you have left on this planet? <br />
+        <span id="aside">(based on an average US life expectancy of 75)</span>
+        <br />
         <span id="life-expectancy"></span>
       </h2>
     </div>

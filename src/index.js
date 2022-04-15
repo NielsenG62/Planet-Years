@@ -9,6 +9,6 @@ $("form").submit(function (event) {
   const age = parseInt($("#age").val());
   const planet = $("#planet-select").val();
   const user = new User(age);
-  $("#planet-age").text(user.planetAge(planet, user.dayAge));
+  $("#planet-age").text(user.planetAge(planet, user.dayAge) + " years old");
   $("#life-expectancy").text(user.lifeExpectancy(planet));
 });
