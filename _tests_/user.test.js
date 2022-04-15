@@ -29,20 +29,20 @@ describe("User", () => {
 
   // lifeExpectancy
   test("should calculate the life expectancy of the user in earth years", () => {
-    expect(user.earthAge(user.lifeExpectancy())).toEqual(50);
+    expect(user.lifeExpectancy("earth")).toEqual(50);
   });
   test("should calculate the life expectancy of the user in Jupiter years", () => {
-    expect(user.jupiterAge(user.lifeExpectancy())).toEqual(4);
+    expect(user.lifeExpectancy("jupiter")).toEqual(4);
   });
   test("should calculate how many years over the life expectancy is, if age is above it", () => {
     user = new User("Gabe", 90);
-    expect(user.earthAge(user.lifeExpectancy())).toEqual(
+    expect(user.lifeExpectancy("earth")).toEqual(
       "You are 15 years over the average life expectancy on this planet."
     );
   });
-  test("should calculate how many years over the life expectancy is, if age is above it", () => {
+  test("should calculate how many years over the life expectancy on Mercury is, if age is above it", () => {
     user = new User("Gabe", 90);
-    expect(user.mercuryAge(user.lifeExpectancy())).toEqual(
+    expect(user.lifeExpectancy("mercury")).toEqual(
       "You are 63 years over the average life expectancy on this planet."
     );
   });
