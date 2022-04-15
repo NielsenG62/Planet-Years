@@ -9,7 +9,9 @@ export class User {
     let earthAge = Math.floor(days / 365);
     if (earthAge < 0) {
       let expectancy =
-        "You are " + Math.abs(earthAge) + " years over the average";
+        "You are " +
+        Math.abs(earthAge) +
+        " years over the average life expectancy on this planet.";
       return expectancy;
     }
     return earthAge;
