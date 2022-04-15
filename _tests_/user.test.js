@@ -27,6 +27,10 @@ describe("User", () => {
     expect(user.jupiterAge(user.dayAge)).toEqual(2);
   });
 
+  test("should return the user's age in Mercury years", () => {
+    expect(user.planetAge("mercury", user.dayAge)).toEqual(103);
+  });
+
   // lifeExpectancy
   test("should calculate the life expectancy of the user in earth years", () => {
     expect(user.earthAge(user.lifeExpectancy())).toEqual(50);
