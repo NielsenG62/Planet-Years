@@ -19,4 +19,6 @@ export class User {
     let marsAge = Math.floor(this.dayAge / 687);
     return marsAge;
   }
+
+  jupiterAge() {}
 }
