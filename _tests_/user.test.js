@@ -40,23 +40,30 @@ describe("User", () => {
   });
 
   test("should calculate how many years over the life expectancy is, if age is above it", () => {
-    user = new User(90);
+    const user = new User(90);
     expect(user.lifeExpectancy("earth")).toEqual(
       "You are 15 years over the average life expectancy on this planet."
     );
   });
 
   test("should calculate how many years over the life expectancy on Mercury is, if age is above it", () => {
-    user = new User(90);
+    const user = new User(90);
     expect(user.lifeExpectancy("mercury")).toEqual(
       "You are 63 years over the average life expectancy on this planet."
     );
   });
 
   test("should give special message if lifeExpectancy is 0", () => {
-    user = new User(75);
+    const user = new User(75);
     expect(user.lifeExpectancy("earth")).toEqual(
       "You are at the average life expectancy on this planet."
     );
+  });
+
+  // date based age
+  test("should calculate age in days based on full birthday", () => {
+    const date1 = new Date("07/07/1996");
+    const date2 = new Date("04/15/2022");
+    expect(user.accuratePlanetAge("earth", date1, date2)).toEqual(25);
   });
 });

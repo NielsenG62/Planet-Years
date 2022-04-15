@@ -20,6 +20,8 @@ export class User {
     return planetAge;
   }
 
+  accuratePlanetAge() {}
+
   lifeExpectancy(planet) {
     let daysExpected = 27375;
     let daysLeft = Math.floor(daysExpected - this.dayAge);
