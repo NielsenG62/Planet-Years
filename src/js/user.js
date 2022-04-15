@@ -15,5 +15,8 @@ export class User {
     return venusAge;
   }
 
-  marsAge() {}
+  marsAge() {
+    let marsAge = Math.floor(this.dayAge / 687);
+    return marsAge;
+  }
 }
