@@ -31,16 +31,37 @@ export class User {
 
   venusAge(days) {
     let venusAge = Math.floor(days / 225);
+    if (venusAge < 0) {
+      let expectancy =
+        "You are " +
+        Math.abs(venusAge) +
+        " years over the average life expectancy on this planet.";
+      return expectancy;
+    }
     return venusAge;
   }
 
   marsAge(days) {
     let marsAge = Math.floor(days / 687);
+    if (marsAge < 0) {
+      let expectancy =
+        "You are " +
+        Math.abs(marsAge) +
+        " years over the average life expectancy on this planet.";
+      return expectancy;
+    }
     return marsAge;
   }
 
   jupiterAge(days) {
     let jupiterAge = Math.floor(days / 4307);
+    if (jupiterAge < 0) {
+      let expectancy =
+        "You are " +
+        Math.abs(jupiterAge) +
+        " years over the average life expectancy on this planet.";
+      return expectancy;
+    }
     return jupiterAge;
   }
 
