@@ -5,6 +5,8 @@ export class User {
     this.dayAge = age * 365;
   }
 
+  earthAge() {}
+
   mercuryAge(days) {
     let mercuryAge = Math.floor(days / 88);
     return mercuryAge;
