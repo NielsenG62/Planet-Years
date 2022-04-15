@@ -36,6 +36,6 @@ describe("User", () => {
   });
   test("should calculate how many years over the life expectancy is, if age is above it", () => {
     user = new User("Gabe", 90);
-    expect(user.lifeExpectancyCalc()).toEqual("You are 15 years over the average age");
+    expect(user.earthAge(user.lifeExpectancy())).toEqual("You are 15 years over the average");
   });
 });
