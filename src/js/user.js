@@ -19,6 +19,13 @@ export class User {
 
   mercuryAge(days) {
     let mercuryAge = Math.floor(days / 88);
+    if (mercuryAge < 0) {
+      let expectancy =
+        "You are " +
+        Math.abs(mercuryAge) +
+        " years over the average life expectancy on this planet.";
+      return expectancy;
+    }
     return mercuryAge;
   }
 
