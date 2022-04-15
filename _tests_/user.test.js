@@ -2,11 +2,10 @@ import { User } from "./../src/js/user.js";
 describe("User", () => {
   let user;
   beforeEach(() => {
-    user = new User("Gabe", 25);
+    user = new User(25);
   });
 
   test("should correctly create a user object with their age", () => {
-    expect(user.name).toEqual("Gabe");
     expect(user.age).toEqual(25);
   });
 
@@ -35,13 +34,13 @@ describe("User", () => {
     expect(user.lifeExpectancy("jupiter")).toEqual(4);
   });
   test("should calculate how many years over the life expectancy is, if age is above it", () => {
-    user = new User("Gabe", 90);
+    user = new User(90);
     expect(user.lifeExpectancy("earth")).toEqual(
       "You are 15 years over the average life expectancy on this planet."
     );
   });
   test("should calculate how many years over the life expectancy on Mercury is, if age is above it", () => {
-    user = new User("Gabe", 90);
+    user = new User(90);
     expect(user.lifeExpectancy("mercury")).toEqual(
       "You are 63 years over the average life expectancy on this planet."
     );
