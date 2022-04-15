@@ -25,5 +25,9 @@ export class User {
     return jupiterAge;
   }
 
-  lifeExpectancy() {}
+  lifeExpectancy() {
+    let yearsExpected = 75;
+    let yearsLeft = Math.floor(yearsExpected - this.age);
+    return yearsLeft;
+  }
 }
