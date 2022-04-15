@@ -30,7 +30,11 @@ export class User {
         Math.abs(planetDaysLeft) +
         " years over the average life expectancy on this planet.";
       return expectancy;
+    } else if (planetDaysLeft === 0) {
+      let expectancy = "You are at the average life expectancy on this planet.";
+      return expectancy;
+    } else {
+      return planetDaysLeft;
     }
-    return planetDaysLeft;
   }
 }
