@@ -17,7 +17,9 @@ $("form").submit(function (event) {
     return input.value;
   }
   $("#planet-age").text(
-    user.planetAge("earth", user.accuratePlanetAge(date1, date2)) + " years old"
+    user.planetAge(planet, user.accuratePlanetAge(date1, date2)) + " years old"
   );
-  $("#life-expectancy").text(user.lifeExpectancy(planet));
+  $("#life-expectancy").text(
+    user.lifeExpectancy(user.accuratePlanetAge(planet, date1, date2))
+  );
 });
