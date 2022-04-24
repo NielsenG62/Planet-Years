@@ -14,8 +14,10 @@ export class User {
       planetAge = Math.floor(days / 225);
     } else if (planet === "mars") {
       planetAge = Math.floor(days / 687);
-    } else {
+    } else if (planet === "jupiter") {
       planetAge = Math.floor(days / 4307);
+    } else {
+      alert("ERROR: Unable to calculate planet age");
     }
     return planetAge;
   }
