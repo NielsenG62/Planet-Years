@@ -28,3 +28,7 @@ _This application is pretty simple. It takes user input for age and planet, and 
 ## Known Bugs
 
 - _No bugs that I know of in this commit._
+
+## License
+
+Copyright (c) 2022 Gabriel Nielsen
